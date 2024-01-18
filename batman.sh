@@ -9,6 +9,8 @@ sleep 3
 apt-get update
 apt-get upgrade -y
 apt-get dist-upgrade -y
+apt-file update   
+update-initramfs -u
 apt-get clean
 apt-get -y install ntp
 cp batman.png  /usr/share/images
