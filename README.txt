@@ -9,7 +9,8 @@ Font : defaul:Cantrell Regular 11  change to symbol fonts (size 4)
        default user imageicon : emblem-kali => disable
 Login window: Horizontal=50 | Vertical=60  
 
-Edit Start Menu (Whisker Menu)
-
 git clone https://github.com/d-dragon-project/batcomputer
 Run batman.sh
+
+After reboot Edit Start Menu (Whisker Menu)
+change the start menu icon
