@@ -19,3 +19,16 @@ https://www.offsec.com/kali-linux/kali-linux-customization/
 customize 
 start menu icon use bat-icon and change title from "Applications" to "Bat-OS" and change Display to Icon and title
 refer to custom-startmenu.png
+
+plymouth (test : 
+apt-get install plymouth
+apt-get install plymouth-themes
+apt-get install plymouth-x11
+apt-get install firmware-linux
+playmouth-set-default-theme
+
+
+cd /usr/local/bin
+sudo nano plymouth-preview
+
+
