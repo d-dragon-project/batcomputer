@@ -8,6 +8,5 @@ Icons: FLat-Remix-Blue-Dark
 Font : defaul:Cantrell Regular 11  change to symbol fonts (size 4)
        default user imageicon : emblem-kali => disable
 Login window: Horizontal=50 | Vertical=60  
-git clone 
+git clone https://github.com/d-dragon-project/batcomputer
 Run batman.sh
-
