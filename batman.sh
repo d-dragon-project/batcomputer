@@ -21,6 +21,12 @@ cp -f kali-laminaria-16x9.png /usr/share/backgrounds/kali/
 cp -f grub-4x3.png /boot/grub/themes/kali/
 cp -f grub-16x9.png /boot/grub/themes/kali/
 cp -f desktop-background /usr/share/images/desktop-base
+cp -f plymouth_background_future.png /usr/share/plymouth/themes/futureprototype/
+cd /usr/share/plymouth/themes/futureprototype/
+rm -f logo.png
+rm -f debian.png
+plymouth-set-default-theme -R futureprototype
+plymouth-set-default-theme
 apt-get install -y linux-image-$(uname -r|sed 's,[^-]*-[^-]*-,,') linux-headers-$(uname -r|sed 's,[^-]*-[^-]*-,,')
 dpkg -i dkms_3.0.12-1_all.deb
 dpkg -i b43-fwcutter_019-4_amd64.deb
