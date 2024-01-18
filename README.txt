@@ -20,15 +20,18 @@ customize
 start menu icon use bat-icon and change title from "Applications" to "Bat-OS" and change Display to Icon and title
 refer to custom-startmenu.png
 
-plymouth (test : 
+add to batman.sh
 apt-get install plymouth
 apt-get install plymouth-themes
 apt-get install plymouth-x11
 apt-get install firmware-linux
-playmouth-set-default-theme
 
 
+configure manually
 cd /usr/local/bin
 sudo nano plymouth-preview
-
+add the contents of "plymouth-preview.sh" and save
+chmod +x plymouth-preview
+sudo playmouth-set-default-theme
+plymouth-preview
 
