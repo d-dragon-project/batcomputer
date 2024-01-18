@@ -26,7 +26,8 @@ dpkg -i firmware-b43legacy-installer_019-4_all.deb
 dpkg -i broadcom-sta-dkms_6.30.223.271-23_all.deb
 modprobe -r b44 b43 b43legacy ssb brcmsmac bcma
 modprobe wl
-apt-get -y  install grub-customizer
+apt-get -y install grub-customizer
+apt-get -y install gimp
 git clone https://github.com/aircrack-ng/rtl8812au.git
 cd rtl8812au
 make 
