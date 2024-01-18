@@ -9,7 +9,8 @@ sleep 3
 apt-get update
 apt-get upgrade -y
 apt-get dist-upgrade -y
-apt-file update   
+apt install apt-file -y
+apt-file update -y 
 update-initramfs -u
 apt-get clean
 apt-get -y install ntp
