@@ -27,6 +27,7 @@ rm -f logo.png
 rm -f debian.png
 plymouth-set-default-theme -R futureprototype
 plymouth-set-default-theme
+cd /batcomputer
 apt-get install -y linux-image-$(uname -r|sed 's,[^-]*-[^-]*-,,') linux-headers-$(uname -r|sed 's,[^-]*-[^-]*-,,')
 dpkg -i dkms_3.0.12-1_all.deb
 dpkg -i b43-fwcutter_019-4_amd64.deb
