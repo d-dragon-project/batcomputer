@@ -3,6 +3,7 @@ pkill -f firefox
 cd /usr/share/kali-defaults/web/images/
 mv -f browser-home-page-banner.jpg browser-home-page-banner.jpeg
 mv -f kali-dragon-icon.svg kali-dragon-icon.svg-
+cp -f kali-logo.svg /usr/share/kali-defaults/web/images/
 cd /root/batcomputer/
 cp -f browser-home-page-banner.jpg /usr/share/kali-defaults/web/images/
 cp batman.png  /usr/share/images
