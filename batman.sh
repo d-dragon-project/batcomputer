@@ -1,20 +1,5 @@
 #!/bin/bash
 pkill -f firefox
-clear 
-echo "##################################################"
-echo "         Run after installing Kali Linux          "                                      	
-echo " This will reboot the Machine after Installation  "
-echo "##################################################"
-sleep 3
-apt-get update
-apt-get upgrade -y
-apt-get dist-upgrade -y
-apt install apt-file -y
-apt-file update
-update-initramfs -u
-apt-get clean
-apt-get -y install ntp
-clear
 cp batman.png  /usr/share/images
 cp bat-icon.png /usr/share/images
 cp -f desktop-grub.png /usr/share/images/desktop-base/
@@ -28,7 +13,21 @@ rm -f logo.png
 rm -f debian.png
 plymouth-set-default-theme -R futureprototype
 plymouth-set-default-theme
+clear 
+echo "##################################################"
+echo "         Run after installing Kali Linux          "                                      	
+echo " This will reboot the Machine after Installation  "
+echo "##################################################"
+sleep 3
 cd /root/batcomputer
+apt-get update
+apt-get upgrade -y
+apt-get dist-upgrade -y
+apt install apt-file -y
+apt-file update
+update-initramfs -u
+apt-get clean
+apt-get -y install ntp
 clear
 apt-get install -y linux-image-$(uname -r|sed 's,[^-]*-[^-]*-,,') linux-headers-$(uname -r|sed 's,[^-]*-[^-]*-,,')
 dpkg -i dkms_3.0.12-1_all.deb
