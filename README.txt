@@ -18,3 +18,4 @@ Login window: Horizontal=50 | Vertical=60
 https://www.offsec.com/kali-linux/kali-linux-customization/
 customize 
 start menu icon use bat-icon and change title from "Applications" to "Bat-OS" and change Display to Icon and title
+refer to custom-startmenu.png
