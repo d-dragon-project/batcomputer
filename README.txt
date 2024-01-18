@@ -12,5 +12,7 @@ Login window: Horizontal=50 | Vertical=60
 git clone https://github.com/d-dragon-project/batcomputer
 Run batman.sh
 
-After reboot Edit Start Menu (Whisker Menu)
-change the start menu icon
+While batman.sh is running change properties of Start Menu (Whisker Menu) go to Apperance Tab
+For Display select : Icon and Title
+For Title change it to "Bat-OS"
+Change the start menu icon with bat-icon.png located in /usr/share/images
