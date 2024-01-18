@@ -7,6 +7,7 @@ cd /root/batcomputer/
 cp -f browser-home-page-banner.jpg /usr/share/kali-defaults/web/images/
 cp batman.png  /usr/share/images
 cp bat-icon.png /usr/share/images
+cp bat-icon.jpg /usr/share/images
 cp -f desktop-grub.png /usr/share/images/desktop-base/
 cp -f kali-laminaria-16x9.png /usr/share/backgrounds/kali/
 cp -f grub-4x3.png /boot/grub/themes/kali/
