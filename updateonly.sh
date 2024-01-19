@@ -8,7 +8,4 @@ cd /root/batcomputer
 apt-get update
 apt-get upgrade -y
 apt-get dist-upgrade -y
-apt install apt-file -y
-apt-file update
-update-initramfs -u
 apt-get clean
