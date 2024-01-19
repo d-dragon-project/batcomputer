@@ -76,7 +76,7 @@ make install
 clear
 echo "=================================================="
 echo "          Bat-OS has completed installation       "     
-echo "           SYSTEM WILL REBOOT IN 5 SECONDS        "  
+echo "           SYSTEM WILL REBOOT IN A MOMENTS        "  
 echo "=================================================="
 sleep 5
 reboot
