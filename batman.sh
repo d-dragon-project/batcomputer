@@ -70,7 +70,7 @@ modprobe wl
 clear
 echo "=================================================="
 echo "          Bat-OS installing WIFI driver           "     
-echo "THIS IS FOR REALTEK CHIPSET RTL8812AU | RTL8814AU "  
+echo "REALTEK CHIPSET: RTL8811AU | RTL8812AU | RTL8814AU"  
 echo "=================================================="
 sleep 3
 git clone https://github.com/aircrack-ng/rtl8812au.git
