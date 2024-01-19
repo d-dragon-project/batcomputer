@@ -18,6 +18,7 @@ cp bat-icon.png /usr/share/images
 cp bat-icon.jpg /usr/share/images
 cp bat-icon.gif /usr/share/images
 cp bat-icon2.png /usr/share/images
+cp bat-os-icon.png /usr/share/images
 cp -f desktop-grub.png /usr/share/images/desktop-base/
 cp -f kali-laminaria-16x9.png /usr/share/backgrounds/kali/
 cp -f grub-4x3.png /boot/grub/themes/kali/
