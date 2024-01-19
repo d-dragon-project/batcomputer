@@ -1,4 +1,9 @@
 #!/bin/bash
+echo "========================================================"
+echo "   Bat-Os is now preparing for the necessary updates    "
+echo " Open the README file and follow necessary instructions "
+echo "========================================================"
+sleep 3
 pkill -f firefox
 cd /usr/share/kali-defaults/web/images/
 mv -f browser-home-page-banner.jpg browser-home-page-banner.jpeg
@@ -21,10 +26,10 @@ rm -f debian.png
 plymouth-set-default-theme -R futureprototype
 plymouth-set-default-theme
 clear 
-echo "##################################################"
-echo "         Run after installing Kali Linux          "                                      	
-echo " This will reboot the Machine after Installation  "
-echo "##################################################"
+echo "=================================================="
+echo " Bat-Os is now performing the necessary updates   "
+echo "        UPDATE | UPGRADE | DIST-UPGRADE           "
+echo "=================================================="
 sleep 3
 cd /root/batcomputer
 apt-get update
@@ -34,8 +39,21 @@ apt install apt-file -y
 apt-file update
 update-initramfs -u
 apt-get clean
-apt-get -y install ntp
 clear
+echo "=================================================="
+echo "   Bat-Os is now installing necessary softwares   "    
+echo "          NTP | GRUB CUSTOMIZER | GIMP            "
+echo "=================================================="
+sleep 3
+apt-get -y install ntp
+apt-get -y install grub-customizer
+apt-get -y install gimp
+clear
+echo "=================================================="
+echo "          Bat-OS installing WIFI driver           "                                      	
+echo "    THIS IS FOR BROADCOM BCM4331 (2.4G/5.0G)      "   
+echo "=================================================="
+sleep 3
 apt-get install -y linux-image-$(uname -r|sed 's,[^-]*-[^-]*-,,') linux-headers-$(uname -r|sed 's,[^-]*-[^-]*-,,')
 dpkg -i dkms_3.0.12-1_all.deb
 dpkg -i b43-fwcutter_019-4_amd64.deb
@@ -44,10 +62,20 @@ dpkg -i firmware-b43legacy-installer_019-4_all.deb
 dpkg -i broadcom-sta-dkms_6.30.223.271-23_all.deb
 modprobe -r b44 b43 b43legacy ssb brcmsmac bcma
 modprobe wl
-apt-get -y install grub-customizer
-apt-get -y install gimp
+clear
+echo "=================================================="
+echo "          Bat-OS installing WIFI driver           "     
+echo "THIS IS FOR REALTEK CHIPSET RTL8812AU | RTL8814AU "  
+echo "=================================================="
+sleep 3
 git clone https://github.com/aircrack-ng/rtl8812au.git
 cd rtl8812au
 make 
 make install
+clear
+echo "=================================================="
+echo "          Bat-OS has completed installation       "     
+echo "           SYSTEM WILL REBOOT IN 5 SECONDS        "  
+echo "=================================================="
+sleep 5
 reboot
