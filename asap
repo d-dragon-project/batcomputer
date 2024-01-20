@@ -1,0 +1,19 @@
+install
+NMAP (nmap locahost)
+Metasploit (msf console --version) (dpkg -l | grep nmap)
+Python (sudo apt python3) (sudo apt install pip)
+GIT 
+Creating - low level user
+create account using root
+create password
+
+sudo priviledges:
+usermod -aG sudo <nameofaccount>
+chsh -s /bin/bash <nameof accoun>
+to check;   grep 'sudo' /etc/group
+
+Adding Terminal Multiplexer (TILIX / KONSOLE / GUAKE)
+sudo apt install tilix -y
+
+Visual VSCode - download the internet
+sudo apt install ./<codefilename.deb>
