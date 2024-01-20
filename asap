@@ -20,7 +20,7 @@ GIT
 vlc
 tor
 
--apt-get ddebi -y
+-apt-get gdebi -y
 -tilix
 -htop
 -python
@@ -47,4 +47,4 @@ updated version of java apt-cache search openjdk
 Install Archive Manager file-roller
 
 GDebi package Manager
-sudo apt-get ddebi -y
+sudo apt-get gdebi -y
