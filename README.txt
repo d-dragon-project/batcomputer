@@ -20,7 +20,7 @@ Modify Date/Time - select property
 Layout: Date, then Time
 Date- Font:Sans Regular -10  Format: 01/21/2024
 Time- Fonr: Cantrell Regular -10 Format: 12:10:33 am
-
+refer to screnshot
 
 Open Grub Customizer and change Kali to Bat-OS GNU/Linux include the one in Advance
 Do the same with the other OS
