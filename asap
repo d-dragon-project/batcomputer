@@ -1,19 +1,50 @@
+setpassword to the root user
+sudo passwd root
+
+Creating - low level user
+sudo adduser <lowleveluser>
+set password and Full Name -Y
+usermod -aG sudo <lowleveluser>
+
+Create a standard user
+sudo useradd -m <standardusername>
+sudo usermod -a -G sudo <standardusername>
+sudo chsh -s/bin/bash <standardusername>
+
+
 install
 NMAP (nmap locahost)
 Metasploit (msf console --version) (dpkg -l | grep nmap)
 Python (sudo apt python3) (sudo apt install pip)
-GIT 
-Creating - low level user
-create account using root
-create password
+GIT
+vlc
+tor
 
-sudo priviledges:
-usermod -aG sudo <nameofaccount>
-chsh -s /bin/bash <nameof accoun>
-to check;   grep 'sudo' /etc/group
+-apt-get ddebi -y
+-tilix
+-htop
+-python
+-default-jdk
 
 Adding Terminal Multiplexer (TILIX / KONSOLE / GUAKE)
 sudo apt install tilix -y
 
 Visual VSCode - download the internet
 sudo apt install ./<codefilename.deb>
+
+Desktop ad File Setting
+1.  
+
+install HTOP
+apt-get install htop
+
+check default repository
+vim /etc/apt/sources.list
+
+install python  apt-get install python
+install java    apt-get install degault-jdk
+updated version of java apt-cache search openjdk
+Install Archive Manager file-roller
+
+GDebi package Manager
+sudo apt-get ddebi -y
