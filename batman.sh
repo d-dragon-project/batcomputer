@@ -53,6 +53,10 @@ sleep 3
 apt-get -y install ntp
 apt-get -y install grub-customizer
 apt-get -y install gimp
+apt-get -y install gdebi
+apt-get -y install tilix
+apt-get -y install htop
+apt-get -y install default-jdk
 clear
 echo "=================================================="
 echo "          Bat-OS installing WIFI driver           "                                      	
