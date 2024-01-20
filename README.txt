@@ -15,3 +15,6 @@ While batman.sh is running change properties of Start Menu (Whisker Menu) go to 
 For Display select : Icon and Title
 For Title change it to " Bat-OS "
 Change the start menu icon with bat-icon.png or bat-icon.jpg located in /usr/share/images
+
+Open Grub Customizer and change Kali to Bat-OS GNU/Linux include the one in Advance
+Do the same with the other OS
