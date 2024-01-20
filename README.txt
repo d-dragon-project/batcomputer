@@ -16,5 +16,11 @@ For Display select : Icon and Title
 For Title change it to " Bat-OS "
 Change the start menu icon with bat-icon.png or bat-icon.jpg located in /usr/share/images
 
+Modify Date/Time - select property
+Layout: Date, then Time
+Date- Font:Sans Regular -10  Format: 01/21/2024
+Time- Fonr: Cantrell Regular -10 Format: 12:10:33 am
+
+
 Open Grub Customizer and change Kali to Bat-OS GNU/Linux include the one in Advance
 Do the same with the other OS
