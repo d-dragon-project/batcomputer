@@ -48,3 +48,6 @@ Install Archive Manager file-roller
 
 GDebi package Manager
 sudo apt-get gdebi -y
+
+cd /etc/os-release
+
