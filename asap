@@ -42,7 +42,7 @@ check default repository
 vim /etc/apt/sources.list
 
 install python  apt-get install python
-install java    apt-get install degault-jdk
+install java    apt-get install default-jdk
 updated version of java apt-cache search openjdk
 Install Archive Manager file-roller
 
