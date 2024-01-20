@@ -6,6 +6,8 @@ echo " Open the README file and follow necessary instructions "
 echo "========================================================"
 sleep 3
 pkill -f firefox
+cd /etc/ssh/
+dpkg-reconfigure openssh-server
 cd /usr/share/kali-defaults/web/images/
 mv -f browser-home-page-banner.jpg browser-home-page-banner.jpeg
 mv -f kali-dragon-icon.svg kali-dragon-icon.svg-
