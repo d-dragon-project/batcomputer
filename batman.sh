@@ -38,6 +38,7 @@ echo " Bat-Os is now performing the necessary updates   "
 echo "        UPDATE | UPGRADE | DIST-UPGRADE           "
 echo "=================================================="
 sleep 3
+cat /etc/os-release
 cd /root/batcomputer
 apt-get update
 apt-get upgrade -y
