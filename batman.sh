@@ -82,5 +82,6 @@ echo "=================================================="
 echo "          Bat-OS has completed installation       "     
 echo "           SYSTEM WILL REBOOT IN A MOMENTS        "  
 echo "=================================================="
+apt auto-remove -y
 sleep 5
 reboot
