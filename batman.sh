@@ -53,7 +53,7 @@ echo "   Bat-Os is now installing necessary softwares   "
 echo "          NTP | GRUB CUSTOMIZER | GIMP            "
 echo "=================================================="
 sleep 3
-apt-get -y ntpdate
+apt-get -y install ntpdate
 apt-get -y install ntp
 ntpdate -u "time.nist.gov"
 sudo service ntp restart
