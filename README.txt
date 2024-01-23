@@ -1,6 +1,3 @@
-# macbookpro
-Disable Gatekeeper - Open Terminal and run the command "sudo spctl --master-disable"
-
 git clone https://github.com/d-dragon-project/batcomputer
 Run batman.sh
 
