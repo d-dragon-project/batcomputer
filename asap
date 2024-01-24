@@ -11,6 +11,7 @@ sudo useradd -m <standardusername>
 sudo usermod -a -G sudo <standardusername>
 sudo chsh -s/bin/bash <standardusername>
 
+usermod -l <newname> <oldname>
 
 install
 NMAP (nmap locahost)
