@@ -9,6 +9,7 @@ Font : defaul:Cantrell Regular 11  change to symbol fonts (size 4)
 Login window: Horizontal=50 | Vertical=72 
 
 While batman.sh is running change properties of Start Menu (Whisker Menu) go to Apperance Tab
+Profile: Hidden
 For Display select : Icon and Title
 For Title change it to " Bat-OS "
 Change the start menu icon with bat-os-icon.png located in /usr/share/images
