@@ -53,6 +53,7 @@ apt-get -y install gdebi
 apt-get -y install tilix
 apt-get -y install htop
 apt-get -y install default-jdk
+apt-get install qt5-default
 clear
 echo "=================================================="
 echo "          Bat-OS has completed installation       "     
