@@ -5,7 +5,6 @@ echo "   Bat-OS is now preparing for the necessary updates    "
 echo " Open the README file and follow necessary instructions "
 echo "========================================================"
 sleep 3
-pkill -f firefox
 cd /etc/ssh/
 dpkg-reconfigure openssh-server
 cd /usr/share/backgrounds/
@@ -59,7 +58,6 @@ apt-get -y install tilix
 apt-get -y install htop
 apt-get -y install default-jdk
 apt-get -y install qterminal
-apt-get -y install lightdm-gtk-greeter-settings
 clear
 echo "=================================================="
 echo "          Bat-OS has completed installation       "     
