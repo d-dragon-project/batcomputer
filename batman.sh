@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 echo "========================================================"
-echo "   Bat-Os is now preparing for the necessary updates    "
+echo "   Bat-OS is now preparing for the necessary updates    "
 echo " Open the README file and follow necessary instructions "
 echo "========================================================"
 sleep 3
