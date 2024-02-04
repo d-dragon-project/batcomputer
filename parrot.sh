@@ -13,6 +13,9 @@ mv -f default default-
 mv -f default.jpg default-.jpg
 mv -f login.jpg login-.jpg
 cd /root/batcomputer/
+cp default /usr/share/backgrounds/
+cp default.jpg /usr/share/backgrounds/
+cp login.jpg /usr/share/backgrounds/
 cp batman.png /usr/share/icons
 cp bat-icon.png /usr/share/icons
 cp bat-icon.jpg /usr/share/icons
