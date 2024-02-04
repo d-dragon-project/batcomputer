@@ -38,7 +38,6 @@ cd /root/batcomputer
 apt-get update
 apt-get upgrade -y
 apt-get dist-upgrade -y
-apt-get install build-essential -y
 apt install apt-file -y
 apt-file update
 update-initramfs -u
@@ -59,7 +58,7 @@ apt-get -y install gdebi
 apt-get -y install tilix
 apt-get -y install htop
 apt-get -y install default-jdk
-apt-get -y install qtcreator
+apt-get -y install qterminal
 clear
 echo "=================================================="
 echo "          Bat-OS has completed installation       "     
