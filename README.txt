@@ -25,5 +25,16 @@ change root password
 Open Grub Customizer and change Kali to Bat-OS GNU/Linux include the one in Advance
 Do the same with the other OS
 
-change d
+change login name
 After reboot execute usermode -l <new user> <oldusername>
+
+
+For Parrot OS
+-Control Center => Login Window => Users
+change/enanble the ff:
+Allow manual login
+Hide the users list
+then in Settings Tab set clock format %H:%M:%S
+
+Configure Grub Customizer
+
