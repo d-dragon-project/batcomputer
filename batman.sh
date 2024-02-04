@@ -84,8 +84,6 @@ echo "          Bat-OS installing WIFI driver           "
 echo "REALTEK CHIPSET: RTL8811AU | RTL8812AU | RTL8814AU"  
 echo "=================================================="
 sleep 3
-#git clone https://github.com/aircrack-ng/rtl8812au.git
-#cd rtl8812au
 git clone https://github.com/d-dragon-project/Realtet-RTL8811-14AU
 cd Realtet-RTL8811-14AU
 make 
