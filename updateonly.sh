@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "=================================================="
-echo " Bat-Os is now performing the necessary updates   "
+echo " Bat-OS is now performing the necessary updates   "
 echo "        UPDATE | UPGRADE | DIST-UPGRADE           "
 echo "=================================================="
 sleep 3
