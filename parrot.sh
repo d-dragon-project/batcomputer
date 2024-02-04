@@ -59,7 +59,7 @@ apt-get -y install htop
 apt-get -y install default-jdk
 apt-get -y install qterminal
 apt-add-repository ppa:rodsmith/refind
-apt-get install refind
+apt-get -y install refind
 clear
 echo "=================================================="
 echo "          Bat-OS has completed installation       "     
