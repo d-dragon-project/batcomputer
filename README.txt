@@ -16,8 +16,13 @@ Change the start menu icon with bat-os-icon.png located in /usr/share/images
 Modify Date/Time - select property
 Layout: Date, then Time
 Date- Font:Sans Regular -10  Format: 01/21/2024
-Time- Fonr: Cantrell Regular -10 Format: 12:10:33 am
+Time- Font: Cantrell Regular -10 Format: 12:10:33 am
 refer to screnshot
+
+change root password
 
 Open Grub Customizer and change Kali to Bat-OS GNU/Linux include the one in Advance
 Do the same with the other OS
+
+change d
+After reboot execute usermode -l <new user> <oldusername>
