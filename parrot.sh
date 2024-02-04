@@ -12,10 +12,15 @@ cd /usr/share/backgrounds/
 mv -f default default-
 mv -f default.jpg default-.jpg
 mv -f login.jpg login-.jpg
-cd /root/batcomputer/
+cd /usr/share/desktop-base/active-theme/grub/
+mv -f grub-4x3.png grub-4x3-.png
+mv -f grub-16x9.png grub-16x9-.png
+cd /usr/share/backgrounds/
 cp default /usr/share/backgrounds/
 cp default.jpg /usr/share/backgrounds/
 cp login.jpg /usr/share/backgrounds/
+cp -f grub-4x3.png /usr/share/desktop-base/active-theme/grub/
+cp -f grub-16x9.png /usr/share/desktop-base/active-theme/grub/
 cp batman.png /usr/share/icons
 cp bat-icon.png /usr/share/icons
 cp bat-icon.jpg /usr/share/icons
