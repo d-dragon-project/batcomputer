@@ -31,6 +31,8 @@ After reboot execute usermode -l <new user> <oldusername>
 
 For Parrot OS
 -Control Center => Login Window => Users
+Apperance - change background
+Users:
 change/enanble the ff:
 Allow manual login
 Hide the users list
