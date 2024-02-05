@@ -33,9 +33,9 @@ For Parrot OS
 -Control Center => Login Window => Users
 Apperance - change background
 Users:
-change/enanble the ff:
-Allow manual login
-Hide the users list
+change the ff:
+Allow manual login - no
+Hide the users list - yes
 then in Settings Tab set clock format %H:%M:%S
 
 Configure Grub Customizer
