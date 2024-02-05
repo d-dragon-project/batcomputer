@@ -14,7 +14,7 @@ mv -f login.jpg login-.jpg
 cd /usr/share/desktop-base/active-theme/grub/
 mv -f grub-4x3.png grub-4x3-.png
 mv -f grub-16x9.png grub-16x9-.png
-cd /usr/share/backgrounds/
+cd /root/batcomputer
 cp default /usr/share/backgrounds/
 cp default.jpg /usr/share/backgrounds/
 cp login.jpg /usr/share/backgrounds/
