@@ -30,13 +30,18 @@ After reboot execute usermode -l <new user> <oldusername>
 
 
 For Parrot OS
+change root password
+change default username (poweruser)
 -Control Center => Login Window => Users
 Apperance - change background
 Users:
 change the ff:
-Allow manual login - no
-Hide the users list - yes
+Allow manual login - yes
+Hide the users list - no
 then in Settings Tab set clock format %H:%M:%S
 
 Configure Grub Customizer
+set time to 15 seconds
+see - screenshoot
+
 
