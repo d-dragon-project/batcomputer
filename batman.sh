@@ -65,6 +65,7 @@ apt-get -y install gdebi
 apt-get -y install tilix
 apt-get -y install htop
 apt-get -y install default-jdk
+apt-get -y chromium
 clear
 echo "=================================================="
 echo "          Bat-OS installing WIFI driver           "                                      	
