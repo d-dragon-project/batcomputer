@@ -97,3 +97,4 @@ rm -f debian.png
 plymouth-set-default-theme -R futureprototype
 plymouth-set-default-theme
 reboot
+
