@@ -16,10 +16,6 @@ cd /root/batcomputer/
 cp -f kali-logo.svg /usr/share/kali-defaults/web/images/
 cp -f browser-home-page-banner.jpg /usr/share/kali-defaults/web/images/
 cp -f batman.png  /usr/share/images
-cp -f bat-icon.png /usr/share/images
-cp -f bat-icon.jpg /usr/share/images
-cp -f bat-icon.gif /usr/share/images
-cp -f bat-icon2.png /usr/share/images
 cp -f bat-os-icon.png /usr/share/images
 cp -f desktop-grub.png /usr/share/images/desktop-base/
 cp -f batmancomp /usr/share/desktop-base/kali-theme/login/
