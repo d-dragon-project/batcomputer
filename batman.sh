@@ -9,9 +9,9 @@ pkill -f firefox
 cd /etc/ssh/
 dpkg-reconfigure openssh-server
 cd /usr/share/kali-defaults/web/images/
-mv -f browser-home-page-banner.jpg browser-home-page-banner.jpeg
-mv -f kali-dragon-icon.svg kali-dragon-icon.svg-
-mv -f kali-logo.svg kali-logo.svg-
+rm -f browser-home-page-banner.jpg
+rm -f kali-dragon-icon.svg
+rm -f kali-logo.svg
 cd /root/batcomputer/
 cp -f kali-logo.svg /usr/share/kali-defaults/web/images/
 cp -f browser-home-page-banner.jpg /usr/share/kali-defaults/web/images/
@@ -94,5 +94,8 @@ echo "          Bat-OS has completed installation       "
 echo "           SYSTEM WILL REBOOT IN A MOMENTS        "  
 echo "=================================================="
 apt auto-remove -y
+cd /root/batcomputer/
+cp -f kali-logo.svg /usr/share/kali-defaults/web/images/
+cp -f browser-home-page-banner.jpg /usr/share/kali-defaults/web/images/
 sleep 5
 reboot
