@@ -84,8 +84,8 @@ echo "=================================================="
 sleep 3
 git clone https://github.com/d-dragon-project/Realtek-RTL8811-14AU
 cd Realtek-RTL8811-14AU
-make 
-make install
+apt-get install dkms
+sudo ./dkms-install.sh
 clear
 echo "=================================================="
 echo "          Bat-OS has completed installation       "     
