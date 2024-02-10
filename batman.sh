@@ -12,24 +12,6 @@ cd /usr/share/kali-defaults/web/images/
 rm -f browser-home-page-banner.jpg
 rm -f kali-dragon-icon.svg
 rm -f kali-logo.svg
-cd /root/batcomputer/
-cp -f kali-logo.svg /usr/share/kali-defaults/web/images/
-cp -f browser-home-page-banner.jpg /usr/share/kali-defaults/web/images/
-cp -f batman.png  /usr/share/pixmaps
-cp -f bat-os-icon.png /usr/share/pixmaps
-cp -f desktop-grub.png /usr/share/images/desktop-base/
-cp -f batmancomp /usr/share/desktop-base/kali-theme/login/
-cp -f kali-laminaria-16x9.png /usr/share/backgrounds/kali/
-cp -f default /usr/share/backgrounds/kali-16x9/
-cp -f grub-4x3.png /boot/grub/themes/kali/
-cp -f grub-16x9.png /boot/grub/themes/kali/
-cp -f desktop-background /usr/share/images/desktop-base
-cp -f plymouth_background_future.png /usr/share/plymouth/themes/futureprototype/
-cd /usr/share/plymouth/themes/futureprototype/
-rm -f logo.png
-rm -f debian.png
-plymouth-set-default-theme -R futureprototype
-plymouth-set-default-theme
 clear 
 echo "=================================================="
 echo " Bat-Os is now performing the necessary updates   "
@@ -91,11 +73,28 @@ make install RTL8814=1
 clear
 echo "=================================================="
 echo "          Bat-OS has completed installation       "     
-echo "           SYSTEM WILL REBOOT IN A MOMENTS        "  
+echo "           SYSTEM WILL REBOOT IN A MOMENTS       "  
 echo "=================================================="
 apt auto-remove -y
 cd /root/batcomputer/
 cp -f kali-logo.svg /usr/share/kali-defaults/web/images/
 cp -f browser-home-page-banner.jpg /usr/share/kali-defaults/web/images/
-sleep 5
+cd /root/batcomputer/
+cp -f kali-logo.svg /usr/share/kali-defaults/web/images/
+cp -f browser-home-page-banner.jpg /usr/share/kali-defaults/web/images/
+cp -f batman.png  /usr/share/pixmaps
+cp -f bat-os-icon.png /usr/share/pixmaps
+cp -f desktop-grub.png /usr/share/images/desktop-base/
+cp -f batmancomp /usr/share/desktop-base/kali-theme/login/
+cp -f kali-laminaria-16x9.png /usr/share/backgrounds/kali/
+cp -f default /usr/share/backgrounds/kali-16x9/
+cp -f grub-4x3.png /boot/grub/themes/kali/
+cp -f grub-16x9.png /boot/grub/themes/kali/
+cp -f desktop-background /usr/share/images/desktop-base
+cp -f plymouth_background_future.png /usr/share/plymouth/themes/futureprototype/
+cd /usr/share/plymouth/themes/futureprototype/
+rm -f logo.png
+rm -f debian.png
+plymouth-set-default-theme -R futureprototype
+plymouth-set-default-theme
 reboot
