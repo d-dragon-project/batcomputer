@@ -44,4 +44,7 @@ Configure Grub Customizer
 set time to 15 seconds
 see - screenshoot
 
-
+https://www.youtube.com/watch?v=GMl1Oqhacx0
+    - sudo dpkg -i b43-fwcutter_019-4_amd64.deb
+    - tar xfvj broadcom-wl-6.30.163.46.tar.bz2
+    - sudo b43-fwcutter -w /lib/firmware broadcom-wl-6.30.163.46.wl_apsta.o
