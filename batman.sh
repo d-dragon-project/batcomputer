@@ -86,6 +86,8 @@ git clone https://github.com/d-dragon-project/Realtek-RTL8811-14AU
 cd Realtek-RTL8811-14AU
 apt-get install dkms
 sudo ./dkms-install.sh
+make RTL8814=1
+make install RTL8814=1
 clear
 echo "=================================================="
 echo "          Bat-OS has completed installation       "     
