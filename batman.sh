@@ -1,0 +1,96 @@
+#!/bin/bash
+clear
+echo "========================================================"
+echo "   Bat-OS is now preparing for the necessary updates    "
+echo " Open the README file and follow necessary instructions "
+echo "========================================================"
+sleep 3
+pkill -f firefox
+cd /etc/ssh/
+dpkg-reconfigure openssh-server
+cd /usr/share/kali-defaults/web/images/
+cp -f --update browser-home-page-banner.jpg x
+cp -f --update kali-dragon-icon.svg y
+cp -f --update kali-logo.svg z
+clear 
+echo "=================================================="
+echo " Bat-Os is now performing the necessary updates   "
+echo "        UPDATE | UPGRADE | DIST-UPGRADE           "
+echo "=================================================="
+sleep 3
+cat /etc/os-release
+cd /root/batcomputer
+apt-get update
+apt-get upgrade -y
+apt-get dist-upgrade -y
+apt install apt-file -y
+apt-file update
+update-initramfs -u
+apt-get clean
+clear
+echo "=================================================="
+echo "   Bat-Os is now installing necessary softwares   "    
+echo "          NTP | GRUB CUSTOMIZER | GIMP            "
+echo "=================================================="
+sleep 3
+apt-get -y install ntpdate
+apt-get -y install ntp
+dpkg --get-selections ntp
+ntpdate -u "time.nist.gov"
+apt-get -y install grub-customizer
+apt-get -y install gimp
+apt-get -y install gdebi
+apt-get -y install tilix
+apt-get -y install htop
+apt-get -y install default-jdk
+apt-get -y chromium
+clear
+echo "=================================================="
+echo "          Bat-OS installing WIFI driver           "                                      	
+echo "    THIS IS FOR BROADCOM BCM4331 (2.4G/5.0G)      "   
+echo "=================================================="
+sleep 3
+apt-get install -y linux-image-$(uname -r|sed 's,[^-]*-[^-]*-,,') linux-headers-$(uname -r|sed 's,[^-]*-[^-]*-,,')
+dpkg -i dkms_3.0.12-1_all.deb
+dpkg -i b43-fwcutter_019-4_amd64.deb
+dpkg -i firmware-b43-installer_019-4_all.deb
+dpkg -i firmware-b43legacy-installer_019-4_all.deb
+dpkg -i broadcom-sta-dkms_6.30.223.271-23_all.deb
+modprobe -r b44 b43 b43legacy ssb brcmsmac bcma
+modprobe wl
+clear
+echo "=================================================="
+echo "          Bat-OS installing WIFI driver           "     
+echo "REALTEK CHIPSET: RTL8811AU | RTL8812AU | RTL8814AU"  
+echo "=================================================="
+sleep 3
+git clone https://github.com/d-dragon-project/Realtek-RTL8811-14AU
+cd Realtek-RTL8811-14AU
+apt-get install dkms
+sudo ./dkms-install.sh
+clear
+echo "=================================================="
+echo "          Bat-OS has completed installation       "     
+echo "           SYSTEM WILL REBOOT IN A MOMENTS       "  
+echo "=================================================="
+apt auto-remove -y
+cd /root/batcomputer/
+cp -f --upate kali-logo.svg /usr/share/kali-defaults/web/images/
+cp -f --update  browser-home-page-banner.jpg /usr/share/kali-defaults/web/images/
+cd /root/batcomputer/
+cp -f --update kali-logo.svg /usr/share/kali-defaults/web/images/
+cp -f --update browser-home-page-banner.jpg /usr/share/kali-defaults/web/images/
+cp -f --uupdate batman.png  /usr/share/pixmaps
+cp -f --update bat-os-icon.png /usr/share/pixmaps
+cp -f --update background.svg /usr/share/desktop-base/kali-theme/login/
+cp -f --update background /usr/share/desktop-base/kali-theme/login/
+cp -f --update default /usr/share/backgrounds/kali-16x9/
+cp -f --update grub-4x3.png /boot/grub/themes/kali/
+cp -f --update grub-16x9.png /boot/grub/themes/kali/
+cp -f --update plymouth_background_future.png /usr/share/plymouth/themes/futureprototype/
+cd /usr/share/plymouth/themes/futureprototype/
+rm -f logo.png
+rm -f debian.png
+plymouth-set-default-theme -R futureprototype
+plymouth-set-default-theme
+reboot
