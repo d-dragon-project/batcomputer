@@ -43,7 +43,11 @@ apt-get -y install gdebi
 apt-get -y install tilix
 apt-get -y install htop
 apt-get -y install default-jdk
-apt-get -y chromium
+apt-get -y install chromium
+apt-get -y install dkms
+apt-get -y install bc
+apt-get -y install rsync
+apt-get -y install git
 clear
 echo "=================================================="
 echo "          Bat-OS installing WIFI driver           "                                      	
@@ -59,15 +63,32 @@ dpkg -i broadcom-sta-dkms_6.30.223.271-23_all.deb
 modprobe -r b44 b43 b43legacy ssb brcmsmac bcma
 modprobe wl
 clear
-echo "=================================================="
-echo "          Bat-OS installing WIFI driver           "     
-echo "REALTEK CHIPSET: RTL8811AU | RTL8812AU | RTL8814AU"  
-echo "=================================================="
+echo "==================================================="
+echo "          Bat-OS installing WIFI driver            "     
+echo "   TP-Link Nano AC600 (Archer T2U)​ WIFI Adapter    " 
+echo " USB WiFi Adapters that are based on the RTL8811AU "
+echo "==================================================="
+sleep 3
+git clone https://github.com/d-dragon-project/88xxau-072021
+cd 88xxau-072021
+VER=$(sed -n 's/\PACKAGE_VERSION="\(.*\)"/\1/p' dkms.conf)
+sudo rsync -rvhP ./ /usr/src/rtl88x2bu-${VER}
+sudo dkms add -m rtl88x2bu -v ${VER}
+sudo dkms build -m rtl88x2bu -v ${VER}
+sudo dkms install -m rtl88x2bu -v ${VER}
+sudo modprobe 8821au
+clear
+echo "=+================================================="
+echo "           Bat-OS installing WIFI driver           "     
+echo "Alfa AC1900 WiFi Adapter - AWUS1900-Range Dual Band" 
+echo " USB 3.0 Wi-Fi  RTL8812AU/21AU and RTL8814AU drivers        "  
+echo "==================================================="
 sleep 3
 git clone https://github.com/d-dragon-project/Realtek-RTL8811-14AU
 cd Realtek-RTL8811-14AU
-apt-get install dkms
-sudo ./dkms-install.sh
+make RTL8814=1
+make install RTL8814=1
+sudo modprobe 8814au
 clear
 echo "=================================================="
 echo "          Bat-OS has completed installation       "     
