@@ -78,7 +78,6 @@ dkms add -m rtl88x2bu -v ${VER}
 dkms build -m rtl88x2bu -v ${VER}
 dkms install -m rtl88x2bu -v ${VER}
 modprobe 8821au
-pause
 clear
 echo "=+==================================================="
 echo "           Bat-OS installing WIFI driver =           "     
