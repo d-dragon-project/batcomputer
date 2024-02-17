@@ -69,6 +69,7 @@ echo "   TP-Link Nano AC600 (Archer T2U)​ WIFI Adapter    "
 echo " USB WiFi Adapters that are based on the RTL8812AU "
 echo "==================================================="
 sleep 3
+cd /root/batcomputer
 git clone https://github.com/d-dragon-project/88xxau-072021
 cd 88xxau-072021
 VER=$(sed -n 's/\PACKAGE_VERSION="\(.*\)"/\1/p' dkms.conf)
@@ -85,6 +86,7 @@ echo " Alfa AC1900 WiFi Adapter - AWUS1900-Range Dual Band "
 echo " USB 3.0 Wi-Fi  RTL8812AU/21AU and RTL8814AU drivers "  
 echo "====================================================="
 sleep 3
+cd /root/batcomputer
 git clone https://github.com/d-dragon-project/Realtek-RTL8811-14AU
 cd Realtek-RTL8811-14AU
 make RTL8814=1
