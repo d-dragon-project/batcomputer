@@ -84,11 +84,11 @@ sleep 3
 git clone https://github.com/d-dragon-project/88xxau-072021
 cd 88xxau-072021
 VER=$(sed -n 's/\PACKAGE_VERSION="\(.*\)"/\1/p' dkms.conf)
-sudo rsync -rvhP ./ /usr/src/rtl88x2bu-${VER}
-sudo dkms add -m rtl88x2bu -v ${VER}
-sudo dkms build -m rtl88x2bu -v ${VER}
-sudo dkms install -m rtl88x2bu -v ${VER}
-sudo modprobe 8821au
+rsync -rvhP ./ /usr/src/rtl88x2bu-${VER}
+dkms add -m rtl88x2bu -v ${VER}
+dkms build -m rtl88x2bu -v ${VER}
+dkms install -m rtl88x2bu -v ${VER}
+modprobe 8821au
 clear
 echo "=================================================="
 echo "          Bat-OS has completed installation       "     
