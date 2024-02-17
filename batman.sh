@@ -108,6 +108,8 @@ cp -f --update background /usr/share/desktop-base/kali-theme/login/
 cp -f --update default /usr/share/backgrounds/kali-16x9/
 cp -f --update grub-4x3.png /boot/grub/themes/kali/
 cp -f --update grub-16x9.png /boot/grub/themes/kali/
+cp -f --update grub-4x3.png /usr/share/grub/themes/kali
+cp -f --update grub-16x9.png /usr/share/grub/themes/kali
 cp -f --update plymouth_background_future.png /usr/share/plymouth/themes/futureprototype/
 cd /usr/share/plymouth/themes/futureprototype/
 rm -f logo.png
