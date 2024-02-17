@@ -1,0 +1,4 @@
+Things to do after installation of Bat-OS
+reset the root password
+rename the sudo account
+create a guest/non sudo account
