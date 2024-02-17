@@ -49,6 +49,7 @@ echo "=================================================="
 sleep 3
 apt-get -y install ntpdate
 apt-get -y install ntp
+apt-get -y install ntpdate
 ntpdate asia.pool.ntp.org
 apt-get -y install grub-customizer
 apt-get -y install gimp
