@@ -63,18 +63,6 @@ dpkg -i broadcom-sta-dkms_6.30.223.271-23_all.deb
 modprobe -r b44 b43 b43legacy ssb brcmsmac bcma
 modprobe wl
 clear
-echo "=+==================================================="
-echo "           Bat-OS installing WIFI driver =           "     
-echo " Alfa AC1900 WiFi Adapter - AWUS1900-Range Dual Band " 
-echo " USB 3.0 Wi-Fi  RTL8812AU/21AU and RTL8814AU drivers "  
-echo "====================================================="
-sleep 3
-git clone https://github.com/d-dragon-project/Realtek-RTL8811-14AU
-cd Realtek-RTL8811-14AU
-make RTL8814=1
-make install RTL8814=1
-sudo modprobe 8814au
-clear
 echo "==================================================="
 echo "          Bat-OS installing WIFI driver            "     
 echo "   TP-Link Nano AC600 (Archer T2U)​ WIFI Adapter    " 
@@ -89,6 +77,19 @@ dkms add -m rtl88x2bu -v ${VER}
 dkms build -m rtl88x2bu -v ${VER}
 dkms install -m rtl88x2bu -v ${VER}
 modprobe 8821au
+pause
+clear
+echo "=+==================================================="
+echo "           Bat-OS installing WIFI driver =           "     
+echo " Alfa AC1900 WiFi Adapter - AWUS1900-Range Dual Band " 
+echo " USB 3.0 Wi-Fi  RTL8812AU/21AU and RTL8814AU drivers "  
+echo "====================================================="
+sleep 3
+git clone https://github.com/d-dragon-project/Realtek-RTL8811-14AU
+cd Realtek-RTL8811-14AU
+make RTL8814=1
+make install RTL8814=1
+sudo modprobe 8814au
 clear
 echo "=================================================="
 echo "          Bat-OS has completed installation       "     
