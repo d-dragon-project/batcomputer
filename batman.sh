@@ -63,11 +63,11 @@ dpkg -i broadcom-sta-dkms_6.30.223.271-23_all.deb
 modprobe -r b44 b43 b43legacy ssb brcmsmac bcma
 modprobe wl
 clear
-echo "=+================================================="
-echo "           Bat-OS installing WIFI driver           "     
-echo "Alfa AC1900 WiFi Adapter - AWUS1900-Range Dual Band" 
-echo " USB 3.0 Wi-Fi  RTL8812AU/21AU and RTL8814AU drivers        "  
-echo "==================================================="
+echo "=+==================================================="
+echo "           Bat-OS installing WIFI driver =           "     
+echo " Alfa AC1900 WiFi Adapter - AWUS1900-Range Dual Band " 
+echo " USB 3.0 Wi-Fi  RTL8812AU/21AU and RTL8814AU drivers "  
+echo "====================================================="
 sleep 3
 git clone https://github.com/d-dragon-project/Realtek-RTL8811-14AU
 cd Realtek-RTL8811-14AU
