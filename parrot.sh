@@ -50,7 +50,6 @@ sleep 3
 apt-get -y install ntpdate
 apt-get -y install ntp
 ntpdate asia.pool.ntp.org
-sudo service ntp restart
 apt-get -y install grub-customizer
 apt-get -y install gimp
 apt-get -y install gdebi
