@@ -47,7 +47,6 @@ echo "   Bat-Os is now installing necessary softwares   "
 echo "          NTP | GRUB CUSTOMIZER | GIMP            "
 echo "=================================================="
 sleep 3
-apt-get -y install ntpdate
 apt-get -y install ntp
 apt-get -y install ntpdate
 ntpdate asia.pool.ntp.org
