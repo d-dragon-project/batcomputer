@@ -1,1 +1,9 @@
+[Unit]
+Desription=My Script
+After=network.target
 
+[Service]
+ExecStart=/etc/ntp.sh
+
+[Install]
+WantedBy=default.target
