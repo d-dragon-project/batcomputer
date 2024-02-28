@@ -63,6 +63,7 @@ echo "          Bat-OS has completed installation       "
 echo "           SYSTEM WILL REBOOT IN A MOMENTS        "  
 echo "=================================================="
 apt auto-remove -y
-cp myscript.service /etc/systemd/system/
+cp -f myscript.service /etc/systemd/system/
+cp -f ntp.sh /etc
 sleep 5
 reboot
