@@ -64,7 +64,11 @@ echo "           SYSTEM WILL REBOOT IN A MOMENTS        "
 echo "=================================================="
 apt auto-remove -y
 cp -f ntp.sh /etc
+cd /etc
+chmod +x ntp.sh
+cd /root/batcomputer
 cp -f myscript.service /etc/systemd/system/
+cd /etc/systemd/system/
 systemctl daemon-reload
 systemctl enable myscript.service
 systemctl start myscript.service
