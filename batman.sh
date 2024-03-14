@@ -79,6 +79,25 @@ dkms build -m rtl88x2bu -v ${VER}
 dkms install -m rtl88x2bu -v ${VER}
 modprobe 8821au
 clear
+echo "==================================================="
+echo "          Bat-OS installing WIFI driver            "     
+echo "       Asus USB-AC53 Nano AC1200 Dual-Band         " 
+echo " USB WiFi Adapters that are based on the RTL8812AU "
+echo "==================================================="
+sleep 3
+cd /root/batcomputer
+git clone https://github.com/d-dragon-project/asus
+cd asus
+apt-get install dkms
+apt-get install bc
+apt-get install rsync
+VER=$(sed -n 's/\PACKAGE_VERSION="\(.*\)"/\1/p' dkms.conf)
+sudo rsync -rvhP ./ /usr/src/rtl88x2bu-${VER}
+sudo dkms add -m rtl88x2bu -v ${VER}
+sudo dkms build -m rtl88x2bu -v ${VER}
+sudo dkms install -m rtl88x2bu -v ${VER}
+sudo modprobe 88x2bu
+clear
 echo "=+==================================================="
 echo "           Bat-OS installing WIFI driver =           "     
 echo " Alfa AC1900 WiFi Adapter - AWUS1900-Range Dual Band " 
